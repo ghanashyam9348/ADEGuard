@@ -1,0 +1,14 @@
+{
+  "model_name": "all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "num_samples": 3725,
+  "text_columns": [
+    "combined_text",
+    "ade_text",
+    "modifier_text",
+    "text"
+  ],
+  "timestamp": "2025-10-17 UTC",
+  "user": "ghanashyam9348",
+  "device": "cuda"
+}

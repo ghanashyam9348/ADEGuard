@@ -1,0 +1,492 @@
+{
+  "timestamp": "2025-10-16 20:39:10 UTC",
+  "user": "ghanashyam9348",
+  "total_samples": 743,
+  "overall_clustering": {
+    "n_clusters": 13,
+    "n_noise": 536,
+    "silhouette_score": 0.4654441177845001
+  },
+  "age_specific_clustering": {
+    "n_age_groups_analyzed": 6,
+    "age_group_details": {
+      "Adult (18-64)": {
+        "n_clusters": 4,
+        "n_samples": 234,
+        "n_noise": 197
+      },
+      "Unknown": {
+        "n_clusters": 6,
+        "n_samples": 180,
+        "n_noise": 90
+      },
+      "Elderly (65+)": {
+        "n_clusters": 5,
+        "n_samples": 156,
+        "n_noise": 120
+      },
+      "Infant (0-2)": {
+        "n_clusters": 2,
+        "n_samples": 96,
+        "n_noise": 41
+      },
+      "Child (3-12)": {
+        "n_clusters": 0,
+        "n_samples": 47,
+        "n_noise": 47
+      },
+      "Adolescent (13-17)": {
+        "n_clusters": 0,
+        "n_samples": 30,
+        "n_noise": 30
+      }
+    }
+  },
+  "severity_specific_clustering": {
+    "n_severity_levels_analyzed": 4,
+    "severity_level_details": {
+      "Severe": {
+        "n_clusters": 9,
+        "n_samples": 371,
+        "n_noise": 241
+      },
+      "Mild": {
+        "n_clusters": 10,
+        "n_samples": 219,
+        "n_noise": 128
+      },
+      "Moderate": {
+        "n_clusters": 2,
+        "n_samples": 80,
+        "n_noise": 37
+      },
+      "Life-threatening": {
+        "n_clusters": 2,
+        "n_samples": 73,
+        "n_noise": 58
+      }
+    }
+  },
+  "cluster_characteristics": {
+    "0": {
+      "size": 16,
+      "age_distribution": {
+        "Unknown": 8,
+        "Infant (0-2)": 3,
+        "Child (3-12)": 3,
+        "Adult (18-64)": 2
+      },
+      "severity_distribution": {
+        "Mild": 9,
+        "Severe": 6,
+        "Moderate": 1
+      },
+      "common_ades": [
+        "Product storage error",
+        "No adverse event",
+        "Product preparation error"
+      ],
+      "common_modifiers": [
+        "serious",
+        "serious spontaneous safety report",
+        "SIGNIFICANT"
+      ],
+      "common_drugs": [
+        "vaccine",
+        "Vaccine",
+        "MERCK & CO. INC."
+      ],
+      "avg_num_ades": 1.1875,
+      "avg_cluster_probability": 0.7869171743858173
+    },
+    "1": {
+      "size": 13,
+      "age_distribution": {
+        "Unknown": 5,
+        "Infant (0-2)": 4,
+        "Child (3-12)": 2,
+        "Elderly (65+)": 2
+      },
+      "severity_distribution": {
+        "Severe": 8,
+        "Mild": 4,
+        "Moderate": 1
+      },
+      "common_ades": [
+        "Product administered to patient of inappropriate age",
+        "No adverse event",
+        "Expired product administered",
+        "Ageusia",
+        "Wrong product administered"
+      ],
+      "common_modifiers": [
+        "serious case received from a nurse",
+        "serious case received from a other health professional",
+        "serious case received from a Patient"
+      ],
+      "common_drugs": [
+        "Vaccine",
+        "vaccine",
+        "vaccination"
+      ],
+      "avg_num_ades": 1.3076923076923077,
+      "avg_cluster_probability": 0.9487220898879646
+    },
+    "2": {
+      "size": 22,
+      "age_distribution": {
+        "Unknown": 22
+      },
+      "severity_distribution": {
+        "Severe": 22
+      },
+      "common_ades": [
+        "Vaccination failure",
+        "Herpes zoster",
+        "pain",
+        "rash",
+        "Stress"
+      ],
+      "common_modifiers": [
+        "serious",
+        "significant",
+        "Serious"
+      ],
+      "common_drugs": [
+        "vaccine",
+        "vaccination",
+        "Vaccination"
+      ],
+      "avg_num_ades": 2.3181818181818183,
+      "avg_cluster_probability": 0.4545457105060972
+    },
+    "3": {
+      "size": 12,
+      "age_distribution": {
+        "Unknown": 12
+      },
+      "severity_distribution": {
+        "Severe": 12
+      },
+      "common_ades": [
+        "Incomplete course of vaccination"
+      ],
+      "common_modifiers": [
+        "serious",
+        "serious case received from a pharmacist"
+      ],
+      "common_drugs": [
+        "vaccination",
+        "GLAXOSMITHKLINE BIOLOGICALS",
+        "vaccine"
+      ],
+      "avg_num_ades": 1.0,
+      "avg_cluster_probability": 0.8333334147754686
+    },
+    "4": {
+      "size": 9,
+      "age_distribution": {
+        "Elderly (65+)": 8,
+        "Adult (18-64)": 1
+      },
+      "severity_distribution": {
+        "Life-threatening": 8,
+        "Severe": 1
+      },
+      "common_ades": [
+        "weakness",
+        "hospitalized",
+        "malaise",
+        "fatigue",
+        "diarrhea"
+      ],
+      "common_modifiers": [
+        "significant",
+        "severe",
+        "significant and was leading to death"
+      ],
+      "common_drugs": [
+        "Vaccine",
+        "Dose",
+        "vaccination"
+      ],
+      "avg_num_ades": 51.333333333333336,
+      "avg_cluster_probability": 0.933256053882883
+    },
+    "5": {
+      "size": 29,
+      "age_distribution": {
+        "Unknown": 19,
+        "Elderly (65+)": 5,
+        "Infant (0-2)": 4,
+        "Adult (18-64)": 1
+      },
+      "severity_distribution": {
+        "Severe": 19,
+        "Moderate": 7,
+        "Mild": 2,
+        "Life-threatening": 1
+      },
+      "common_ades": [
+        "COVID-19",
+        "covid-19",
+        "Covid-19",
+        "hospitalization",
+        "Drug ineffective"
+      ],
+      "common_modifiers": [
+        "significant",
+        "ongoing",
+        "serious"
+      ],
+      "common_drugs": [
+        "vaccine",
+        "BNT162b2",
+        "COVID19 (COVID19 (PFIZER-BIONTECH))"
+      ],
+      "avg_num_ades": 5.517241379310345,
+      "avg_cluster_probability": 0.93525552583091
+    },
+    "6": {
+      "size": 21,
+      "age_distribution": {
+        "Elderly (65+)": 12,
+        "Adult (18-64)": 6,
+        "Child (3-12)": 1,
+        "Adolescent (13-17)": 1,
+        "Unknown": 1
+      },
+      "severity_distribution": {
+        "Mild": 15,
+        "Severe": 3,
+        "Moderate": 3
+      },
+      "common_ades": [
+        "pain",
+        "tingling",
+        "Joint injury",
+        "numbness",
+        "Pain"
+      ],
+      "common_modifiers": [
+        "Mild",
+        "Systemic",
+        "serious"
+      ],
+      "common_drugs": [
+        "GLAXOSMITHKLINE BIOLOGICALS",
+        "vaccine",
+        "at Injection"
+      ],
+      "avg_num_ades": 3.2857142857142856,
+      "avg_cluster_probability": 0.38095238095238093
+    },
+    "7": {
+      "size": 14,
+      "age_distribution": {
+        "Infant (0-2)": 9,
+        "Child (3-12)": 2,
+        "Adult (18-64)": 2,
+        "Elderly (65+)": 1
+      },
+      "severity_distribution": {
+        "Severe": 8,
+        "Mild": 6
+      },
+      "common_ades": [
+        "seizure",
+        "fever",
+        "Seizure",
+        "Lethargy",
+        "rash"
+      ],
+      "common_modifiers": [
+        "local",
+        "hospitalized"
+      ],
+      "common_drugs": [
+        "GLAXOSMITHKLINE BIOLOGICALS",
+        "Keppra 500 mg",
+        "Oxcarbazepine 300mg"
+      ],
+      "avg_num_ades": 1.8571428571428572,
+      "avg_cluster_probability": 0.8436965933769469
+    },
+    "8": {
+      "size": 11,
+      "age_distribution": {
+        "Adult (18-64)": 4,
+        "Child (3-12)": 3,
+        "Elderly (65+)": 2,
+        "Unknown": 1,
+        "Adolescent (13-17)": 1
+      },
+      "severity_distribution": {
+        "Mild": 11
+      },
+      "common_ades": [
+        "swelling",
+        "Swelling",
+        "pain",
+        "Peripheral swelling",
+        "itching"
+      ],
+      "common_modifiers": [
+        "ongoing",
+        "within 24"
+      ],
+      "common_drugs": [
+        "GLAXOSMITHKLINE BIOLOGICALS",
+        "vaccine",
+        "at injection"
+      ],
+      "avg_num_ades": 1.7272727272727273,
+      "avg_cluster_probability": 0.9464508481890015
+    },
+    "9": {
+      "size": 21,
+      "age_distribution": {
+        "Adult (18-64)": 12,
+        "Elderly (65+)": 5,
+        "Unknown": 3,
+        "Child (3-12)": 1
+      },
+      "severity_distribution": {
+        "Mild": 12,
+        "Severe": 9
+      },
+      "common_ades": [
+        "pain",
+        "soreness",
+        "Pain",
+        "PAIN",
+        "Discomfort"
+      ],
+      "common_modifiers": [
+        "serious"
+      ],
+      "common_drugs": [
+        "vaccine",
+        "GLAXOSMITHKLINE BIOLOGICALS",
+        "vaccination"
+      ],
+      "avg_num_ades": 2.6666666666666665,
+      "avg_cluster_probability": 0.38095310343219646
+    },
+    "10": {
+      "size": 13,
+      "age_distribution": {
+        "Adult (18-64)": 9,
+        "Elderly (65+)": 4
+      },
+      "severity_distribution": {
+        "Moderate": 10,
+        "Mild": 2,
+        "Severe": 1
+      },
+      "common_ades": [
+        "pain",
+        "fever",
+        "Chills",
+        "rash",
+        "chills"
+      ],
+      "common_modifiers": [
+        "extreme",
+        "SEVERE",
+        "SEVERE CHILLS"
+      ],
+      "common_drugs": [
+        "vaccine",
+        "GLAXOSMITHKLINE BIOLOGICALS",
+        "PNEUMO (PREVNAR20)"
+      ],
+      "avg_num_ades": 5.615384615384615,
+      "avg_cluster_probability": 0.9836616330642199
+    },
+    "11": {
+      "size": 16,
+      "age_distribution": {
+        "Infant (0-2)": 7,
+        "Adult (18-64)": 4,
+        "Unknown": 2,
+        "Elderly (65+)": 2,
+        "Child (3-12)": 1
+      },
+      "severity_distribution": {
+        "Mild": 10,
+        "Severe": 4,
+        "Life-threatening": 2
+      },
+      "common_ades": [
+        "rash",
+        "fever",
+        "Fever",
+        "RASH",
+        "pain"
+      ],
+      "common_modifiers": [
+        "ongoing",
+        "serious",
+        "bilateral"
+      ],
+      "common_drugs": [
+        "vaccine",
+        "VARICELLA (VARIVAX)",
+        "tylenol"
+      ],
+      "avg_num_ades": 2.625,
+      "avg_cluster_probability": 0.9664369417192046
+    },
+    "12": {
+      "size": 10,
+      "age_distribution": {
+        "Infant (0-2)": 3,
+        "Adult (18-64)": 2,
+        "Adolescent (13-17)": 2,
+        "Elderly (65+)": 2,
+        "Child (3-12)": 1
+      },
+      "severity_distribution": {
+        "Mild": 5,
+        "Severe": 3,
+        "Moderate": 2
+      },
+      "common_ades": [
+        "fever",
+        "pain",
+        "Fever",
+        "rash"
+      ],
+      "common_modifiers": [
+        "emergency room",
+        "slight"
+      ],
+      "common_drugs": [
+        "GLAXOSMITHKLINE BIOLOGICALS",
+        "PNEUMO (PREVNAR20)",
+        "vaccine"
+      ],
+      "avg_num_ades": 1.2,
+      "avg_cluster_probability": 0.9920806048805846
+    }
+  },
+  "data_distribution": {
+    "age_groups": {
+      "Adult (18-64)": 234,
+      "Unknown": 180,
+      "Elderly (65+)": 156,
+      "Infant (0-2)": 96,
+      "Child (3-12)": 47,
+      "Adolescent (13-17)": 30
+    },
+    "severity_levels": {
+      "Severe": 371,
+      "Mild": 219,
+      "Moderate": 80,
+      "Life-threatening": 73
+    },
+    "avg_ades_per_record": 6.997308209959623,
+    "avg_modifiers_per_record": 3.3943472409152085
+  }
+}

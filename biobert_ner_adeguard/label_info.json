@@ -1,0 +1,25 @@
+{
+  "label2id": {
+    "O": 0,
+    "B-ADE": 1,
+    "I-ADE": 2,
+    "B-DRUG": 3,
+    "I-DRUG": 4,
+    "B-MODIFIER": 5,
+    "I-MODIFIER": 6,
+    "B-SEVERITY": 7,
+    "I-SEVERITY": 8
+  },
+  "id2label": {
+    "0": "O",
+    "1": "B-ADE",
+    "2": "I-ADE",
+    "3": "B-DRUG",
+    "4": "I-DRUG",
+    "5": "B-MODIFIER",
+    "6": "I-MODIFIER",
+    "7": "B-SEVERITY",
+    "8": "I-SEVERITY"
+  },
+  "num_labels": 9
+}

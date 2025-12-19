@@ -1,0 +1,276 @@
+{
+  "timestamp": "2025-10-17 06:16:37 UTC",
+  "user": "ghanashyam9348",
+  "step": "Step 6 - Severity Classification",
+  "total_models_trained": 5,
+  "best_model": {
+    "name": "NeuralNetwork",
+    "accuracy": 0.8429530201342282,
+    "precision": 0.8463506179034271,
+    "recall": 0.8429530201342282,
+    "f1_score": 0.8415168857389598
+  },
+  "all_models_performance": {
+    "RandomForest": {
+      "accuracy": 0.8147651006711409,
+      "precision": 0.8301419995579806,
+      "recall": 0.8147651006711409,
+      "f1_score": 0.8014159843819826,
+      "classification_report": {
+        "Mild": {
+          "precision": 0.7700729927007299,
+          "recall": 0.9173913043478261,
+          "f1-score": 0.8373015873015873,
+          "support": 230.0
+        },
+        "Moderate": {
+          "precision": 0.8947368421052632,
+          "recall": 0.37362637362637363,
+          "f1-score": 0.5271317829457365,
+          "support": 91.0
+        },
+        "Severe": {
+          "precision": 0.8179487179487179,
+          "recall": 0.90625,
+          "f1-score": 0.8598382749326146,
+          "support": 352.0
+        },
+        "Life-threatening": {
+          "precision": 1.0,
+          "recall": 0.5972222222222222,
+          "f1-score": 0.7478260869565218,
+          "support": 72.0
+        },
+        "accuracy": 0.8147651006711409,
+        "macro avg": {
+          "precision": 0.8706896381886777,
+          "recall": 0.6986224750491055,
+          "f1-score": 0.7430244330341151,
+          "support": 745.0
+        },
+        "weighted avg": {
+          "precision": 0.8301419995579806,
+          "recall": 0.8147651006711409,
+          "f1-score": 0.8014159843819826,
+          "support": 745.0
+        }
+      }
+    },
+    "GradientBoosting": {
+      "accuracy": 0.8416107382550335,
+      "precision": 0.845183278494173,
+      "recall": 0.8416107382550335,
+      "f1_score": 0.8388163489431002,
+      "classification_report": {
+        "Mild": {
+          "precision": 0.7843866171003717,
+          "recall": 0.9173913043478261,
+          "f1-score": 0.845691382765531,
+          "support": 230.0
+        },
+        "Moderate": {
+          "precision": 0.7222222222222222,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.6380368098159509,
+          "support": 91.0
+        },
+        "Severe": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8863636363636364,
+          "f1-score": 0.887624466571835,
+          "support": 352.0
+        },
+        "Life-threatening": {
+          "precision": 0.9811320754716981,
+          "recall": 0.7222222222222222,
+          "f1-score": 0.832,
+          "support": 72.0
+        },
+        "accuracy": 0.8416107382550335,
+        "macro avg": {
+          "precision": 0.8441574509207952,
+          "recall": 0.774351433590564,
+          "f1-score": 0.8008381647883293,
+          "support": 745.0
+        },
+        "weighted avg": {
+          "precision": 0.845183278494173,
+          "recall": 0.8416107382550335,
+          "f1-score": 0.8388163489431002,
+          "support": 745.0
+        }
+      }
+    },
+    "LogisticRegression": {
+      "accuracy": 0.810738255033557,
+      "precision": 0.8103479209229334,
+      "recall": 0.810738255033557,
+      "f1_score": 0.8102664114506202,
+      "classification_report": {
+        "Mild": {
+          "precision": 0.7791666666666667,
+          "recall": 0.8130434782608695,
+          "f1-score": 0.7957446808510639,
+          "support": 230.0
+        },
+        "Moderate": {
+          "precision": 0.6046511627906976,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.5875706214689266,
+          "support": 91.0
+        },
+        "Severe": {
+          "precision": 0.8664772727272727,
+          "recall": 0.8664772727272727,
+          "f1-score": 0.8664772727272727,
+          "support": 352.0
+        },
+        "Life-threatening": {
+          "precision": 0.8955223880597015,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8633093525179856,
+          "support": 72.0
+        },
+        "accuracy": 0.810738255033557,
+        "macro avg": {
+          "precision": 0.7864543725610846,
+          "recall": 0.7710706639375118,
+          "f1-score": 0.7782754818913122,
+          "support": 745.0
+        },
+        "weighted avg": {
+          "precision": 0.8103479209229334,
+          "recall": 0.810738255033557,
+          "f1-score": 0.8102664114506202,
+          "support": 745.0
+        }
+      }
+    },
+    "SVM": {
+      "accuracy": 0.8228187919463087,
+      "precision": 0.8284772974369237,
+      "recall": 0.8228187919463087,
+      "f1_score": 0.8140257960551459,
+      "classification_report": {
+        "Mild": {
+          "precision": 0.7580071174377224,
+          "recall": 0.9260869565217391,
+          "f1-score": 0.8336594911937377,
+          "support": 230.0
+        },
+        "Moderate": {
+          "precision": 0.7755102040816326,
+          "recall": 0.4175824175824176,
+          "f1-score": 0.5428571428571428,
+          "support": 91.0
+        },
+        "Severe": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8863636363636364,
+          "f1-score": 0.8715083798882681,
+          "support": 352.0
+        },
+        "Life-threatening": {
+          "precision": 0.9803921568627451,
+          "recall": 0.6944444444444444,
+          "f1-score": 0.8130081300813008,
+          "support": 72.0
+        },
+        "accuracy": 0.8228187919463087,
+        "macro avg": {
+          "precision": 0.8427630838812393,
+          "recall": 0.7311193637280593,
+          "f1-score": 0.7652582860051124,
+          "support": 745.0
+        },
+        "weighted avg": {
+          "precision": 0.8284772974369237,
+          "recall": 0.8228187919463087,
+          "f1-score": 0.8140257960551459,
+          "support": 745.0
+        }
+      }
+    },
+    "NeuralNetwork": {
+      "accuracy": 0.8429530201342282,
+      "precision": 0.8463506179034271,
+      "recall": 0.8429530201342282,
+      "f1_score": 0.8415168857389598,
+      "classification_report": {
+        "Mild": {
+          "precision": 0.7723880597014925,
+          "recall": 0.9,
+          "f1-score": 0.8313253012048193,
+          "support": 230.0
+        },
+        "Moderate": {
+          "precision": 0.7397260273972602,
+          "recall": 0.5934065934065934,
+          "f1-score": 0.6585365853658537,
+          "support": 91.0
+        },
+        "Severe": {
+          "precision": 0.9008746355685131,
+          "recall": 0.8778409090909091,
+          "f1-score": 0.8892086330935252,
+          "support": 352.0
+        },
+        "Life-threatening": {
+          "precision": 0.9508196721311475,
+          "recall": 0.8055555555555556,
+          "f1-score": 0.8721804511278195,
+          "support": 72.0
+        },
+        "accuracy": 0.8429530201342282,
+        "macro avg": {
+          "precision": 0.8409520986996033,
+          "recall": 0.7942007645132645,
+          "f1-score": 0.8128127426980045,
+          "support": 745.0
+        },
+        "weighted avg": {
+          "precision": 0.8463506179034271,
+          "recall": 0.8429530201342282,
+          "f1-score": 0.8415168857389598,
+          "support": 745.0
+        }
+      }
+    }
+  },
+  "cross_validation_results": {
+    "RandomForest": {
+      "mean_f1": 0.793085559808628,
+      "std_f1": 0.01568780877173222,
+      "scores": [
+        0.8118628625246975,
+        0.800994817345698,
+        0.802020751668974,
+        0.7681647961713712,
+        0.7823845713323998
+      ]
+    },
+    "LogisticRegression": {
+      "mean_f1": 0.8009472409921136,
+      "std_f1": 0.00632774494248501,
+      "scores": [
+        0.7977258396301881,
+        0.8120353159738769,
+        0.7942076029168272,
+        0.797157183215072,
+        0.8036102632246042
+      ]
+    }
+  },
+  "classification_classes": [
+    "Mild",
+    "Moderate",
+    "Severe",
+    "Life-threatening"
+  ],
+  "model_comparison": {
+    "highest_accuracy": 0.8429530201342282,
+    "highest_f1": 0.8415168857389598,
+    "highest_precision": 0.8463506179034271,
+    "highest_recall": 0.8429530201342282
+  }
+}

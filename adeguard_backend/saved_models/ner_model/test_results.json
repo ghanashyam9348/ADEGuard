@@ -1,0 +1,237 @@
+{
+  "test_results": [
+    {
+      "text": "Patient experienced severe headache and nausea after COVID-19 vaccine administration.",
+      "entities": [
+        {
+          "text": "patientexperienced",
+          "label": "DRUG",
+          "start": 0,
+          "end": 19,
+          "confidence": 0.9870349168777466
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY",
+          "start": 20,
+          "end": 26,
+          "confidence": 0.796394944190979
+        },
+        {
+          "text": "headache",
+          "label": "ADE",
+          "start": 27,
+          "end": 35,
+          "confidence": 0.9912617206573486
+        },
+        {
+          "text": "nausea",
+          "label": "ADE",
+          "start": 40,
+          "end": 46,
+          "confidence": 0.9949243068695068
+        },
+        {
+          "text": "covid-19",
+          "label": "DRUG",
+          "start": 53,
+          "end": 61,
+          "confidence": 0.9963182806968689
+        },
+        {
+          "text": "vaccine",
+          "label": "DRUG",
+          "start": 62,
+          "end": 69,
+          "confidence": 0.9451937675476074
+        }
+      ]
+    },
+    {
+      "text": "Mild injection site pain and redness following Pfizer vaccination, resolved in 2 days.",
+      "entities": [
+        {
+          "text": "mildinjection",
+          "label": "DRUG",
+          "start": 0,
+          "end": 14,
+          "confidence": 0.8347398042678833
+        },
+        {
+          "text": "pain",
+          "label": "ADE",
+          "start": 20,
+          "end": 24,
+          "confidence": 0.742046058177948
+        },
+        {
+          "text": "redness",
+          "label": "ADE",
+          "start": 29,
+          "end": 36,
+          "confidence": 0.9964548945426941
+        },
+        {
+          "text": "pfizer",
+          "label": "DRUG",
+          "start": 47,
+          "end": 53,
+          "confidence": 0.9973301291465759
+        },
+        {
+          "text": "vaccination,",
+          "label": "DRUG",
+          "start": 54,
+          "end": 66,
+          "confidence": 0.9978628158569336
+        }
+      ]
+    },
+    {
+      "text": "Hospitalized due to anaphylactic reaction, received epinephrine treatment immediately.",
+      "entities": [
+        {
+          "text": "hospitalizeddueto",
+          "label": "DRUG",
+          "start": 0,
+          "end": 19,
+          "confidence": 0.9080797433853149
+        },
+        {
+          "text": "anaphylacticreaction,",
+          "label": "ADE",
+          "start": 20,
+          "end": 42,
+          "confidence": 0.9284458756446838
+        },
+        {
+          "text": "epinephrine",
+          "label": "DRUG",
+          "start": 52,
+          "end": 63,
+          "confidence": 0.9941278696060181
+        },
+        {
+          "text": "immediately",
+          "label": "MODIFIER",
+          "start": 74,
+          "end": 85,
+          "confidence": 0.9428351521492004
+        }
+      ]
+    },
+    {
+      "text": "77 year old male with significant heart failure after Moderna vaccine.",
+      "entities": [
+        {
+          "text": "77yearoldmalewith",
+          "label": "DRUG",
+          "start": 0,
+          "end": 21,
+          "confidence": 0.8849974870681763
+        },
+        {
+          "text": "significant",
+          "label": "MODIFIER",
+          "start": 22,
+          "end": 33,
+          "confidence": 0.8978336453437805
+        },
+        {
+          "text": "heartfailure",
+          "label": "ADE",
+          "start": 34,
+          "end": 47,
+          "confidence": 0.8446416854858398
+        },
+        {
+          "text": "moderna",
+          "label": "DRUG",
+          "start": 54,
+          "end": 61,
+          "confidence": 0.9944762587547302
+        },
+        {
+          "text": "vaccine.",
+          "label": "DRUG",
+          "start": 62,
+          "end": 70,
+          "confidence": 0.8372732400894165
+        }
+      ]
+    },
+    {
+      "text": "Moderate fever and chills reported 6 hours post-vaccination with Johnson & Johnson.",
+      "entities": [
+        {
+          "text": "moderate",
+          "label": "DRUG",
+          "start": 0,
+          "end": 8,
+          "confidence": 0.9817466735839844
+        },
+        {
+          "text": "fever",
+          "label": "ADE",
+          "start": 9,
+          "end": 14,
+          "confidence": 0.9649964570999146
+        },
+        {
+          "text": "chills",
+          "label": "ADE",
+          "start": 19,
+          "end": 25,
+          "confidence": 0.9936984777450562
+        },
+        {
+          "text": "6hourspost",
+          "label": "MODIFIER",
+          "start": 35,
+          "end": 47,
+          "confidence": 0.7307095527648926
+        }
+      ]
+    }
+  ],
+  "performance_summary": {
+    "total_texts_tested": 5,
+    "total_entities_found": 24,
+    "avg_entities_per_text": 4.8,
+    "avg_confidence": 0.9243093132972717,
+    "entity_distribution": {
+      "DRUG": 12,
+      "SEVERITY": 1,
+      "ADE": 8,
+      "MODIFIER": 3
+    },
+    "confidence_scores": [
+      0.9870349168777466,
+      0.796394944190979,
+      0.9912617206573486,
+      0.9949243068695068,
+      0.9963182806968689,
+      0.9451937675476074,
+      0.8347398042678833,
+      0.742046058177948,
+      0.9964548945426941,
+      0.9973301291465759,
+      0.9978628158569336,
+      0.9080797433853149,
+      0.9284458756446838,
+      0.9941278696060181,
+      0.9428351521492004,
+      0.8849974870681763,
+      0.8978336453437805,
+      0.8446416854858398,
+      0.9944762587547302,
+      0.8372732400894165,
+      0.9817466735839844,
+      0.9649964570999146,
+      0.9936984777450562,
+      0.7307095527648926
+    ]
+  },
+  "timestamp": "2025-10-19T05:35:15.784673",
+  "user": "ghanashyam9348"
+}

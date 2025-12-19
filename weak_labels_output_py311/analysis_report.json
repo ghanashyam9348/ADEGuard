@@ -1,0 +1,56 @@
+{
+  "export_info": {
+    "timestamp": "2025-10-19T03:38:10.405278",
+    "user": "ghanashyam9348",
+    "python_version": "3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)]",
+    "total_records": 5000
+  },
+  "analysis": {
+    "summary": {
+      "total_records": 5000,
+      "successful_records": 5000,
+      "records_with_entities": 5000,
+      "total_entities": 96098,
+      "success_rate": 1.0,
+      "entity_coverage": 1.0,
+      "avg_entities_per_record": 19.2196
+    },
+    "entity_distribution": {
+      "DRUG": 35095,
+      "ADE": 28376,
+      "SEVERITY": 2069,
+      "MODIFIER": 30558
+    },
+    "method_performance": {
+      "structured_field": 9411,
+      "enhanced_dictionary": 78100,
+      "advanced_regex": 8587
+    },
+    "severity_distribution": {
+      "Moderate": 557,
+      "Severe": 2087,
+      "Mild": 1157,
+      "Life-threatening": 395,
+      "Unknown": 804
+    },
+    "age_group_distribution": {
+      "Child (3-12)": 512,
+      "Elderly (65+)": 999,
+      "Unknown": 1057,
+      "Adult (18-64)": 1461,
+      "Infant (0-2)": 722,
+      "Adolescent (13-17)": 249
+    },
+    "confidence_stats": {
+      "mean": 0.8710446627401197,
+      "std": 0.08882535602517808,
+      "min": 0.6,
+      "max": 1.0
+    },
+    "quality_metrics": {
+      "high_confidence_entities": 85910,
+      "medium_confidence_entities": 10188,
+      "low_confidence_entities": 0
+    }
+  }
+}

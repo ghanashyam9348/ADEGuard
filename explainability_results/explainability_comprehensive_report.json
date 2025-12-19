@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-10-17 07:56:16 UTC",
+  "user": "ghanashyam9348",
+  "step": "Step 7 - Model Explainability (SHAP/LIME)",
+  "models_analyzed": [
+    "logisticregression",
+    "neural_network"
+  ],
+  "explainability_methods": [
+    "SHAP",
+    "LIME"
+  ],
+  "shap_analysis": {
+    "models_explained": [
+      "neural_network",
+      "logisticregression"
+    ],
+    "explanation_type": "Global and Local feature importance"
+  },
+  "lime_analysis": {
+    "models_explained": [
+      "neural_network",
+      "logisticregression"
+    ],
+    "explanation_type": "Local interpretable model-agnostic explanations"
+  },
+  "comparative_analysis": {
+    "logisticregression": {
+      "correlation": 0.0,
+      "common_features": 384,
+      "agreement_level": "Poor Agreement"
+    },
+    "neural_network": {
+      "correlation": 0.0,
+      "common_features": 384,
+      "agreement_level": "Poor Agreement"
+    }
+  },
+  "summary_statistics": {
+    "mean_correlation": 0.0,
+    "std_correlation": 0.0,
+    "min_correlation": 0.0,
+    "max_correlation": 0.0
+  },
+  "recommendations": [
+    "Low agreement suggests model complexity or explanation limitations",
+    "Consider additional explanation methods or model simplification",
+    "Use SHAP for global feature importance understanding",
+    "Use LIME for local instance-specific explanations",
+    "Validate explanations with domain expertise",
+    "Consider explanation consistency across different model types",
+    "Apply fixes for numpy scalar conversion and feature matching"
+  ],
+  "fixes_applied": [
+    "Enhanced SHAP importance extraction with multi-class support",
+    "Fixed numpy scalar conversion issues",
+    "Improved feature matching between SHAP and LIME",
+    "Added fallback synthetic comparisons",
+    "Enhanced error handling and logging"
+  ]
+}
