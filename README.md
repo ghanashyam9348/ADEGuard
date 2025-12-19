@@ -63,45 +63,45 @@ The system processes VAERS (Vaccine Adverse Event Reporting System) data and oth
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                  ADEGuard System Architecture                │
+│                  ADEGuard System Architecture               │
 ├─────────────────────────────────────────────────────────────┤
-│                                                               │
+│                                                             │
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │         Streamlit Dashboard (Frontend)               │   │
 │  │  - Interactive UI for data visualization             │   │
 │  │  - Report submission and management                  │   │
 │  │  - Analytics and insights                            │   │
 │  └────────────────────┬─────────────────────────────────┘   │
-│                       │ HTTP/REST                             │
-│                       ▼                                        │
+│                       │ HTTP/REST                           │
+│                       ▼                                     │
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │      FastAPI Backend (Microservices Layer)           │   │
-│  │  ┌──────────────────────────────────────────────┐   │   │
-│  │  │  NER Service        (Entity Extraction)      │   │   │
-│  │  │  - BioBERT Model                             │   │   │
-│  │  └──────────────────────────────────────────────┘   │   │
-│  │  ┌──────────────────────────────────────────────┐   │   │
-│  │  │  Severity Service   (Risk Assessment)        │   │   │
-│  │  │  - Classification Model                      │   │   │
-│  │  └──────────────────────────────────────────────┘   │   │
-│  │  ┌──────────────────────────────────────────────┐   │   │
-│  │  │  Clustering Service (Event Grouping)         │   │   │
-│  │  │  - HDBSCAN Algorithm                         │   │   │
-│  │  └──────────────────────────────────────────────┘   │   │
-│  │  ┌──────────────────────────────────────────────┐   │   │
-│  │  │  Explainability Service (Interpretability)   │   │   │
-│  │  │  - SHAP & LIME Explainers                    │   │   │
-│  │  └──────────────────────────────────────────────┘   │   │
+│  │  ┌──────────────────────────────────────────────┐    │   │
+│  │  │  NER Service        (Entity Extraction)      │    │   │
+│  │  │  - BioBERT Model                             │    │   │
+│  │  └──────────────────────────────────────────────┘    │   │
+│  │  ┌──────────────────────────────────────────────┐    │   │
+│  │  │  Severity Service   (Risk Assessment)        │    │   │
+│  │  │  - Classification Model                      │    │   │
+│  │  └──────────────────────────────────────────────┘    │   │
+│  │  ┌──────────────────────────────────────────────┐    │   │
+│  │  │  Clustering Service (Event Grouping)         │    │   │
+│  │  │  - HDBSCAN Algorithm                         │    │   │
+│  │  └──────────────────────────────────────────────┘    │   │
+│  │  ┌──────────────────────────────────────────────┐    │   │
+│  │  │  Explainability Service (Interpretability)   │    │   │
+│  │  │  - SHAP & LIME Explainers                    │    │   │
+│  │  └──────────────────────────────────────────────┘    │   │
 │  └──────────────────────────────────────────────────────┘   │
-│                       │                                       │
+│                       │                                     │
 │  ┌────────────────────▼──────────────────────────────────┐  │
 │  │           Data Storage & Processing                   │  │
-│  │  - VAERS Datasets (CSV)                              │  │
+│  │  - VAERS Datasets (CSV)                               │  │
 │  │  - Embeddings (NumPy files)                           │  │
 │  │  - Model Checkpoints (SafeTensors)                    │  │
-│  │  - Results & Analytics                               │  │
-│  └──────────────────────────────────────────────────────┘  │
-│                                                               │
+│  │  - Results & Analytics                                │  │
+│  └───────────────────────────────────────────────────────┘  │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
